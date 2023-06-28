@@ -1,0 +1,9 @@
+
+FULL: g++ -std=c++17 -o out logger_defaultParam.h jconfigloader.cpp logger_base.h logger_utils.cpp logger_filter.cpp logger.cpp main.cpp 
+
+jconfigloader: g++ -c -std=c++17 jconfigloader.cpp -o jconfigloader.o
+logger_base: g++ -c -std=c++17 logger_base.cpp -o logger_base.o
+logger_defaultParam: g++ -c -std=c++17 logger_defaultParam.h -o logger_defaultParam.o
+logger_filter: g++ -c -std=c++17 logger_filter.cpp -o logger_filter.o
+logger_utils: g++ -c -std=c++17 logger_utils.cpp -o logger_utils.o
+logger: g++ -c -std=c++17 logger.cpp -o logger.o

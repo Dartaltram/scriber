@@ -1,0 +1,23 @@
+{
+	"Version" : "1.0",
+
+	"Terminal-logging" : {
+		"Enable" : true,
+		"enable none_level" : true,
+		"enable debug_level" : true,
+		"enable info_level" : true,
+		"enable warning_level" : true,
+		"enable error_level" : true
+		},
+
+	"File-logging" : {
+		"path" : "",
+		"fileName" : "",
+		"Enable" : false,
+		"enable none_level" : false,
+		"enable debug_level" : false,
+		"enable info_level" : false,
+		"enable warning_level" : false,
+		"enable error_level" : false
+	}
+}
