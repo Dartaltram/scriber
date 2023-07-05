@@ -72,7 +72,8 @@ void scriber::ScribeLogger::loadParameters() {
     }
 
     size_t length = sizeof(defaultLoggerParam) / sizeof(defaultLoggerParam[0]);
-    m_data = new jconfigloader::parameterObj("scriber_init.json", defaultLoggerParam, length);
+    std::string filePath = _utils::getPrgPath() + "config_" + _utils::getPrgName() + "/scriber_init.json";
+    m_data = new jconfigloader::parameterObj(filePath, defaultLoggerParam, length);
 
     m_logTerminal_enabled = m_data->get_value<bool>({"Terminal-logging", "Enable"});
 

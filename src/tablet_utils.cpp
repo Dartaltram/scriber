@@ -78,6 +78,16 @@ std::string scriber::_utils::getPrgName() {
     return prgName;
 }
 
+std::string scriber::_utils::getPrgPath() {
+    
+    char c_path[ PATH_MAX ];
+    ssize_t count = readlink("/proc/self/exe", c_path, PATH_MAX);
+    std::string filePath(c_path, (count > 0) ? count : 0);
+    filePath = filePath.substr(0, filePath.find_last_of("/\\") + 1);
+
+    return filePath;
+}
+
 std::string scriber::_utils::getSavePath(std::string default_path, std::string default_name) {
 
     if (!default_path.empty() && default_path.back() != '/')

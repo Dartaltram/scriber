@@ -6,6 +6,9 @@
 #include <iostream>
 #include <chrono>
 
+#include <unistd.h>     //pathing
+#include <limits.h>     //pathing
+
 namespace scriber {
 
     namespace _utils {
@@ -19,6 +22,7 @@ namespace scriber {
         std::string getLogDate();
 
         std::string getPrgName();
+        std::string getPrgPath();
 
         std::string getSavePath(std::string default_path, std::string default_name);
 

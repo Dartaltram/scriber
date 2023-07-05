@@ -2,6 +2,7 @@
 #define TABLET_DEFAULTPARAM_H
 
 #include <iostream>
+#include "tablet_utils.h"
 
 static std::string defaultLoggerParam[] = {
 
@@ -18,7 +19,7 @@ static std::string defaultLoggerParam[] = {
     "\t\t},\n",
     "\n",
     "\t\"File-logging\" : {\n",
-    "\t\t\"path\" : \"\",\n",
+    "\t\t\"path\" : \"" + scriber::_utils::getPrgPath() + "\",\n",
     "\t\t\"fileName\" : \"\",\n",
     "\t\t\"Enable\" : true,\n",
     "\t\t\"enable none_level\" : true,\n",
