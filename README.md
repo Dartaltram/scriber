@@ -5,7 +5,7 @@ General log system on both file and terminal
 - g++ <your_program> -o <your_output> -lscriber -ljconfigloader
 
 ## Dependancies
-- jconfigloader
+- jconfigloader: https://github.com/Dartaltram/jconfigloader
 
 ## TODO:
 - make script to install library (.a) in /usr/local/lib
